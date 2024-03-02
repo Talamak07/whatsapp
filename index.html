@@ -1,16 +1,46 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+   <style>
+      .container {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+      }
+
+      .icon-container {
+         display: flex;
+         align-items: center;
+         margin: 10px;
+      }
+
+      .icon-container a {
+         text-decoration: none;
+         margin: 0 10px; 
+      }
+   </style>
+</head>
 <body>
+   <div class="container">
+      <div class="icon-container">
+         <a href="javascript:void(0);" onclick="redirectToRandomWhatsApp()">
+            <i class="fa fa-whatsapp icon" style="font-size:70px;color:#128C7E"></i>
+         </a>    
+      </div>
+   </div>
+
    <script>
       function redirectToRandomWhatsApp() {
          // List of WhatsApp numbers
          var whatsappLinks = [
-            "https://wa.me/+254772546959",
-            "https://wa.me/+254771728462",
+            "https://wa.me/+212772314875",
+            "https://wa.me/+212665453102",
+            "https://wa.me/+212774283398",
+            "https://wa.me/+17813835501",
             // Add more links as needed
          ];
 
@@ -20,7 +50,7 @@
          // Redirect to the random WhatsApp link
          window.open(whatsappLinks[randomIndex], "_blank");
       }
-
+     
    </script>
 </body>
 </html>
