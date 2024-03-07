@@ -1,55 +1,24 @@
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <style>
-      .container {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         text-align: center;
-      }
-
-      .icon-container {
-         display: flex;
-         align-items: center;
-         margin: 10px;
-      }
-
-      .icon-container a {
-         text-decoration: none;
-         margin: 0 10px; 
-      }
-   </style>
 </head>
 <body>
-   <div class="container">
-      <div class="icon-container">
-         <a href="javascript:void(0);" onclick="redirectToRandomWhatsApp()">
-            <i class="fa fa-whatsapp icon" style="font-size:70px;color:#128C7E"></i>
-         </a>    
-      </div>
-   </div>
-
    <script>
-      function redirectToRandomWhatsApp() {
-         // List of WhatsApp numbers
-         var whatsappLinks = [
-            "https://wa.me/+919795382648",
-            "https://wa.me/+6285956151803",
-            "https://wa.me/+6285956151805",
-            // Add more links as needed
-         ];
+      // List of WhatsApp numbers
+      var whatsappLinks = [
+         "https://wa.me/+919795382648",
+         "https://wa.me/+6285956151803",
+         "https://wa.me/+6285956151805
+         // Add more links as needed
+      ];
 
-         // Get a random index
-         var randomIndex = Math.floor(Math.random() * whatsappLinks.length);
+      // Get a random index
+      var randomIndex = Math.floor(Math.random() * whatsappLinks.length);
 
-         // Redirect to the random WhatsApp link
-         window.open(whatsappLinks[randomIndex], "_blank");
-      }
-     
+      // Redirect to the random WhatsApp link
+      window.location.href = whatsappLinks[randomIndex];
    </script>
 </body>
 </html>
